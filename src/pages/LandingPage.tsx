@@ -8,12 +8,12 @@ export default function LandingPage() {
         <div className="flex flex-col min-h-screen font-sans bg-background scroll-smooth">
 
         {/* Header */}
-        <header className="sticky top-0 w-full bg-blue-500 text-primary-foreground border-4 border-black shadow-[6px_6px_0px_black] z-50">
+        <header className="sticky top-0 w-full bg-white/80 text-primary-foreground border-4 border-black shadow-[6px_6px_0px_black] z-50">
             <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center py-4 px-4 sm:px-6">
-            <h1 className="text-2xl sm:text-3xl font-extrabold tracking-wide border-4 border-black px-3 py-1 bg-secondary text-secondary-foreground shadow-[4px_4px_0px_black]">
+            <h1 className="text-2xl bg-gray-600 text-white sm:text-3xl font-extrabold tracking-wide border-4 border-black px-3 py-1 shadow-[4px_4px_0px_black]">
                 TaskBot
             </h1>
-            <nav className="flex flex-wrap gap-4 sm:gap-6 text-base sm:text-lg font-bold mt-4 sm:mt-0">
+            <nav className="flex flex-wrap gap-4 sm:gap-6 text-base sm:text-lg text-black font-bold mt-4 sm:mt-0">
                 <a className="hover:underline"
                 onClick={(e) => {
                     e.preventDefault();
@@ -104,7 +104,7 @@ export default function LandingPage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4 justify-center">
                 <motion.button 
-                className="bg-pink-400 px-8 py-2 border-4 border-black text-black font-bold shadow-[4px_4px_0px_black] hover:bg-pink-500"
+                className="bg-blue-400 px-8 py-2 border-4 border-black text-white font-bold shadow-[4px_4px_0px_black] hover:bg-blue-500"
                 whileTap={{
                     x: 5,
                     y: 5,
@@ -114,10 +114,27 @@ export default function LandingPage() {
                     }
                 }}
                 onTap={() => {
-                    setLocation('/assignments')
+                    setLocation('/assignment-form')
                 }}
                 >
-                Start
+                    Assignment
+                </motion.button>
+
+                <motion.button 
+                className="bg-yellow-400 px-8 py-2 border-4 border-black text-black font-bold shadow-[4px_4px_0px_black] hover:bg-yellow-300"
+                whileTap={{
+                    x: 5,
+                    y: 5,
+                    boxShadow: "none",
+                    transition: {
+                    duration: 0.3
+                    }
+                }}
+                onTap={() => {
+                    setLocation('/birthday-form')
+                }}
+                >
+                    Birthday
                 </motion.button>
             </div>
             </motion.div>
