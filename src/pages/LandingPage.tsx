@@ -75,7 +75,7 @@ export default function LandingPage() {
             initial={{ backgroundPosition: "0% 50%" }}
             animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
             transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-            className="absolute inset-0 bg-gradient-to-r from-pink-400 via-yellow-300 to-green-300 opacity-60"
+            className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-gray-300 to-blue-400 opacity-60"
             />
 
             <motion.div
