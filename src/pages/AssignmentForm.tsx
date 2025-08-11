@@ -34,8 +34,11 @@ export default function AssignmentForm() {
     function handleSubmit(e: any) {
         e.preventDefault();
 
+        // https://zairus.app.n8n.cloud/webhook/4510742b-f12f-49d8-88c9-094201142c5b
+        // https://zairus.app.n8n.cloud/webhook/4510742b-f12f-49d8-88c9-094201142c5b
+
         setLoading(true);
-        axios.post("https://zairus.app.n8n.cloud/webhook/4510742b-f12f-49d8-88c9-094201142c5b", formData)
+        axios.post("https://zairus.app.n8n.cloud/webhook/store-assignment", formData)
         .then((res) => {
             setLoading(false);
             console.log(res);
