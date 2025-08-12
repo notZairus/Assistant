@@ -106,8 +106,13 @@ export default function AssignmentForm() {
                             }}
                         >
                             <option value="">--Select a Subject--</option>
+                            <option value="IAS101">IAS101</option>
+                            <option value="MATH2">MATH2</option>
+                            <option value="RES101">RES101</option>
+                            <option value="SP101">SP101</option>
+                            <option value="PL101">PL101</option>
                             <option value="SF101">SF101</option>
-                            <option value="opt2">Opt2</option>
+                            <option value="PELEC102">PELEC102</option>
                         </select>
                     </div>
 
