@@ -30,7 +30,7 @@ export default function BirthdayForm() {
         e.preventDefault();
 
         setLoading(true);
-        axios.post("https://zairus.app.n8n.cloud/webhook/store-birthday", formData)
+        axios.post("https://primary-production-af279.up.railway.app/webhook/store-birthday", formData)
         .then((res) => {
             setLoading(false);
             console.log(res);
